@@ -123,8 +123,12 @@
     display: none;
 }
 .slides img {
+    opacity: 1;
     width: 100%;
     border-radius: 5px;
+}
+.slides img:hover{
+opacity: 0.6;
 }
 .cursor{
     cursor: pointer;
@@ -181,7 +185,65 @@
 .active,.demo-slide:hover{
     opacity: 1;
 }
+/* CONTACT */
 
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact-contain{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.info label{
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+.info textarea{
+    font-size: 16px;
+    height: 180px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.datacontact{
+    height: 28px;
+    font-size: 16px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.contact-contain > h2{
+    font-size: 56px;
+    color: white;
+    padding: 10px;
+}
+.contact-contain > p{
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+.sendinfo{
+    align-self: flex-end;
+    margin-top: 10px;
+    width: 15%;
+    height: 36px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
 /* Main Background */
 #main-contain{
     background-image: url("../images/rainbow-vortex.svg");

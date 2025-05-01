@@ -2,12 +2,18 @@ $(document).ready(function(){
 
     let indexslide = 1;
     showSlides(indexslide);
-    
+
     /* Slide Selection */
 
     $(".prev").click(function(){
-        showSlides(indexslide += -1);
-        console.log(indexslide);
+        if(indexslide==1){
+            indexslide = 6;
+            showSlides(indexslide);
+            console.log(indexslide);
+        }else{
+            showSlides(indexslide += -1);
+            console.log(indexslide);
+        }
     })
     $(".next").click(function(){
         showSlides(indexslide += 1);
