@@ -241,8 +241,36 @@ opacity: 0.6;
     height: 36px;
     font-size: 18px;
     color: white;
+    background-color: unset;
     border: none;
+    border-radius: 5px;
     font-weight: bold;
+    transition: all 0.3s ease;
+}
+.sendinfo:hover{
+    cursor: pointer;
+    background-color: #88304E;
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+
+.footer{
+    background-color: #88304E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.footer ul{
+    display: flex;
+    list-style: none;
+}
+.footer li{
+    margin: 0px 10px;
+}
+.footer img {
+    height: 40px;
 }
 /* Main Background */
 #main-contain{
